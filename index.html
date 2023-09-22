@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="webcreators pro logo.png" type="image/x-icon">
+    <meta name="keywords"
+        content="web app development, UX/UI design, mobile app integration, Côte d'Azur WebCreator Pro">
+    <meta name="description"
+        content="Your brief and engaging description of the webpage content goes here. It should be concise and relevant to encourage users to click through and visit your site.">
+    <title>Côte d'Azur WebCreator Pro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: black;
+            margin: 0px;
+            padding: 0px;
+            background-color: white;
+        }
+
+        #navbar {
+            display: flex;
+            flex-direction: row;
+            position: fixed;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            /* border: 2px solid red; */
+
+        }
+
+        #nav_options {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #nav_options a {
+            text-decoration: none;
+            color: black;
+            font-size: medium;
+        }
+
+        #nav_options a:hover,
+        #nav_options a.active {
+            text-decoration: underline;
+            color: gray;
+        }
+
+        #nav_options div {
+            padding: 2em 2em;
+        }
+
+        #logo img {
+            margin-left: 1.5em;
+            width: 111px;
+        }
+
+        .search {
+            display: flex;
+            flex-direction: row;
+            margin: auto 1%;
+        }
+
+        .search input {
+            background-color: white;
+            color: black;
+            height: 24px;
+            border-radius: 4px;
+        }
+
+        .home {
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            /* border: 2px solid red; */
+            margin: 0% auto;
+        }
+
+        .home_left {
+            width: 60vw;
+            margin: 8em 2em;
+        }
+
+        .home_left h1 {
+            padding-left: 2em;
+        }
+
+        .home_left p {
+            margin-left: 4em;
+        }
+
+        .home_img img {
+            width: 80%;
+            padding: 2em 2em;
+        }
+
+        .home_btn {
+            margin-left: 12%;
+            margin-top: 1em;
+            background-color: red;
+            width: 85%;
+            border: 2px solid green;
+            border-radius: 10px;
+            height: 15%;
+        }
+
+        .home_btn a {
+            text-decoration: none;
+            color: white;
+            font-size: x-large;
+        }
+
+        .details {
+            text-align: center;
+            font-size: large;
+            color: blue;
+        }
+
+        .what-we-do h1 {
+            margin-left: 10%;
+            font-size: x-large;
+        }
+
+        .sevices {
+            width: 76%;
+            margin: 1% auto;
+        }
+
+        .clients_head {
+            text-align: center;
+        }
+
+        .clients {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 70%;
+            margin: 3% auto;
+        }
+
+        .course-link {
+            text-decoration: none;
+            color: black;
+        }
+
+        .client-01,.client-02,
+        .client-03 {
+            width: 22%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .client-01 img, .client-02 img, .client-03 img {
+            width: 100%;
+        }
+
+        .client-btn {
+            width: 100%;
+        }
+
+        .client-btn a {
+            text-decoration: none;
+            font-size: larger;
+        }
+        #contact-us h2{
+            text-align: center;
+        }
+
+        .contact-us {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* border: 2px solid red; */
+            width: 80%;
+            margin: 1em auto;
+
+        }
+
+        .contact_map {
+            width: 90%;
+            margin: 0px auto;
+        }
+
+        .contact_map img {
+            width: 100%
+        }
+
+        .contact_form {
+            width: 40%;
+            /* border: 2px solid green; */
+        }
+
+        .contact_form h3 {
+            margin-bottom: 1em;
+        }
+
+        .contact_form form {
+            display: flex;
+            flex-direction: column;
+            /* max-width: 700px; */
+        }
+
+        .contact_form label {
+            font-size: larger;
+        }
+
+        .contact_form input {
+            font-size: medium;
+            margin: 0.1em 0em;
+        }
+
+        footer {
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: space-between; */
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-left {
+            display: inline-block;
+            margin: 0em auto;
+            padding: 0em 1em;
+            /* border: 2px solid red; */
+        }
+
+        .footer-left a {
+            padding: 0em 1em;
+            text-decoration: none;
+        }
+
+        .footer-mid {
+            text-align: right;
+            margin: 2px auto;
+            text-decoration: none;
+            /* border: 2px solid red; */
+        }
+
+        .footer-right {
+            /* border: 2px solid red; */
+            text-align: right;
+            margin-right: 1em;
+        }
+
+        .footer-right a,
+        .footer-mid a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div id="navbar">
+            <!-- left box for logo -->
+            <a href="index.html">
+                <div id="logo">
+                    <img src="webcreators pro logo.png" alt="logo">
+                </div>
+            </a>
+            <!-- mid box for navbar -->
+            <div id="nav_options">
+                <div><a href="#header" class="active">Home</a></div>
+                <div><a href="#services">Services</a></div>
+                <div><a href="#testimonials">Testimonials</a></div>
+                <div><a href="#contact-us">Contact Us</a></div>
+
+            </div>
+            <!-- right box for buttons -->
+            <div class="search">
+                <input type="text" ,name="search" , id="search" , placeholder="Search in website">
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="home">
+            <div class="home_left">
+                <h1><br><br>
+                    Welcome to Côte d'Azur Web Design and Development
+                </h1><br>
+                <p>At Côte d'Azur WebCreator Pro, we're more than just a digital agency – we're your creative partner in
+                    bringing your online vision to life. Nestled along the stunning shores of the French Riviera, our
+                    team is passionate about crafting captivating web experiences that reflect the beauty and
+                    sophistication of this iconic region.</p><br>
+                <button class="home_btn"><a href="#contact-us">Get A Free Consultation</a></button>
+            </div>
+            <div class="home_img">
+                <br><br><br><br>
+                <img src="home-poster.png" alt="poster"><br><br>
+            </div>
+
+        </div>
+    </section>
+    
+    <section id="services">
+
+        <div class="details">
+            <h1>Our Clients have a <b>100%</b> Visibility rate online</h1><br>
+        </div>
+        <div class="what-we-do">
+            <h1>What We Do?</h1>
+            <div class="sevices">
+                <h3>Website Development</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo vero, sunt fugiat est facilis
+                    repellendus delectus! Quaerat enim ex corporis voluptas dolorum deserunt nobis fugiat, eligendi Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    minima, iste quis doloribus!</p>
+                <h3>Services - 02</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo vero, sunt fugiat est facilis Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    repellendus delectus! Quaerat enim ex corporis voluptas dolorum deserunt nobis fugiat, eligendi Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    minima, iste quis doloribus!</p>
+                    <h3>Services - 03</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo vero, sunt fugiat est facilis Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        repellendus delectus! Quaerat enim ex corporis voluptas dolorum deserunt nobis fugiat, eligendi
+                        minima, iste quis doloribus!</p>
+                    <h3>Services - 04</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo vero, sunt fugiat est facilis Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        repellendus delectus! Quaerat enim ex corporis voluptas dolorum deserunt nobis fugiat, eligendi Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        minima, iste quis doloribus!</p>
+                    <h3>Services - 05</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo vero, sunt fugiat est facilis Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        repellendus delectus! Quaerat enim ex corporis voluptas dolorum deserunt nobis fugiat, eligendi
+                        minima, iste quis doloribus!</p><br>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials">
+        <div class="clients_head">
+            <h1>Testimonials</h1>
+        </div>
+
+        <div class="clients">
+            <div class="client-01">
+                <img src="EDUCATBIES logo.png" alt="Educatbies Logo">
+                <p>Welcome to the "Introduction to Python Programming" course! This comprehensive course is designed
+                    to
+                    provide students with a solid foundation in Python, one of the most versatile and popular
+                    programming languages in the world.
+                    <button class="client-btn"><a href="https://educatbies.com" target="_blank">Visit the
+                            Website</a></button>
+            </div>
+            <div class="client-02">
+                <img src="Skema_Business_School_Logo.png" alt="">
+                <h3>Skema Business School</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit natus, debitis impedit dolor optio
+                    ullam inventore quo temporibus esse rem culpa nam quasi nemo voluptates         Officiis.</p>
+                <button class="client-btn"><a href="https://www.skema.edu/">Visit the Website</a></button>
+            </div>
+            <div class="client-03">
+                <img src="Amadeus_Logo.png" alt="">
+                <h3>Amadeus IT Group</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos deleniti rem adipisci officiis
+                    similique
+                    quisquam in, voluptatum reiciendis. Inventore, provident voluptas. Modi odit iste voluptates, vero</p>
+                <button class="client-btn"><a href="democlass.html">Visit the Website</a></button>
+            </div>
+        </div>
+    </section>
+    <section id="contact-us">
+        <h2>Contact - us</h2>
+        <div class="contact-us">
+            <div class="contact_details">
+                <h4>Address</h4>
+                <p>Antibes, France</p>
+                <h4>E-mail</h4>
+                <p>info@webcreatorspro.com</p>
+            </div>
+            <div class="contact_form">
+                <form onsubmit="sendemail(); reset(); return false">
+                    <h3>Get a free Consultation</h3>
+
+                    <label for="name">Enter Your Name</label>
+                    <input type="text" id="name" name="Name" placeholder="First Name LAST NAME" required>
+
+                    <label for="email">E - mail</label>
+                    <input type="email" id="email" name="E-mail" placeholder="info@webcreatorspro.com" required>
+
+                    <label for="phone">Phone Number (Please mention the country code)</label>
+                    <input type="text" id="phone" name="Phone&nbsp;Number" placeholder="+33 1 23 45 67 89" required>
+
+                    <label for="message">Write your Message:</label>
+                    <textarea id="message" name="Message" rows="8"></textarea>
+                    <button type="submit">Request</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-left">
+            <a href="https://www.facebook.com/SKEMA.Business.School" class="fa fa-facebook"></a>
+            <a href="https://www.youtube.com/skemabstv" class="fa fa-youtube"></a>
+            <a href="https://www.linkedin.com/company/skema-business-school/" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/skema_bs/" class="fa fa-instagram"></a>
+        </div>
+        <div class="footer-mid">
+            <p><a href="https://www.skema.edu/">© - Côte d'Azur WebCreator Pro </a>
+            </p>
+        </div>
+        <div class="footer-right">
+            <a href="#contact-us">Contact Us</a>
+            <p>Antibes, France</p>
+        </div>
+    </footer>
+</body>
+
+</html>
