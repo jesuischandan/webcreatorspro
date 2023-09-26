@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="webcreators pro logo.png" type="image/x-icon">
     <meta name="keywords"
@@ -13,250 +14,7 @@
         content="Your brief and engaging description of the webpage content goes here. It should be concise and relevant to encourage users to click through and visit your site.">
     <title>Côte d'Azur WebCreator Pro</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
 
-        body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            color: black;
-            margin: 0px;
-            padding: 0px;
-            background-color: white;
-        }
-
-        #navbar {
-            display: flex;
-            flex-direction: row;
-            position: fixed;
-            width: 100%;
-            justify-content: space-between;
-            align-items: center;
-            background-color: white;
-            /* border: 2px solid red; */
-
-        }
-
-        #nav_options {
-            display: flex;
-            flex-direction: row;
-        }
-
-        #nav_options a {
-            text-decoration: none;
-            color: black;
-            font-size: medium;
-        }
-
-        #nav_options a:hover,
-        #nav_options a.active {
-            text-decoration: underline;
-            color: gray;
-        }
-
-        #nav_options div {
-            padding: 2em 2em;
-        }
-
-        #logo img {
-            margin-left: 1.5em;
-            width: 111px;
-        }
-
-        .search {
-            display: flex;
-            flex-direction: row;
-            margin: auto 1%;
-        }
-
-        .search input {
-            background-color: white;
-            color: black;
-            height: 24px;
-            border-radius: 4px;
-        }
-
-        .home {
-            display: flex;
-            flex-direction: row;
-            width: 80%;
-            /* border: 2px solid red; */
-            margin: 0% auto;
-        }
-
-        .home_left {
-            width: 60vw;
-            margin: 8em 2em;
-        }
-
-        .home_left h1 {
-            padding-left: 2em;
-        }
-
-        .home_left p {
-            margin-left: 4em;
-        }
-
-        .home_img img {
-            width: 80%;
-            padding: 2em 2em;
-        }
-
-        .home_btn {
-            margin-left: 12%;
-            margin-top: 1em;
-            background-color: red;
-            width: 85%;
-            border: 2px solid green;
-            border-radius: 10px;
-            height: 15%;
-        }
-
-        .home_btn a {
-            text-decoration: none;
-            color: white;
-            font-size: x-large;
-        }
-
-        .details {
-            text-align: center;
-            font-size: large;
-            color: blue;
-        }
-
-        .what-we-do h1 {
-            margin-left: 10%;
-            font-size: x-large;
-        }
-
-        .sevices {
-            width: 76%;
-            margin: 1% auto;
-        }
-
-        .clients_head {
-            text-align: center;
-        }
-
-        .clients {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: 70%;
-            margin: 3% auto;
-        }
-
-        .course-link {
-            text-decoration: none;
-            color: black;
-        }
-
-        .client-01,.client-02,
-        .client-03 {
-            width: 22%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .client-01 img, .client-02 img, .client-03 img {
-            width: 100%;
-        }
-
-        .client-btn {
-            width: 100%;
-        }
-
-        .client-btn a {
-            text-decoration: none;
-            font-size: larger;
-        }
-        #contact-us h2{
-            text-align: center;
-        }
-
-        .contact-us {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            /* border: 2px solid red; */
-            width: 80%;
-            margin: 1em auto;
-
-        }
-
-        .contact_map {
-            width: 90%;
-            margin: 0px auto;
-        }
-
-        .contact_map img {
-            width: 100%
-        }
-
-        .contact_form {
-            width: 40%;
-            /* border: 2px solid green; */
-        }
-
-        .contact_form h3 {
-            margin-bottom: 1em;
-        }
-
-        .contact_form form {
-            display: flex;
-            flex-direction: column;
-            /* max-width: 700px; */
-        }
-
-        .contact_form label {
-            font-size: larger;
-        }
-
-        .contact_form input {
-            font-size: medium;
-            margin: 0.1em 0em;
-        }
-
-        footer {
-            background-color: black;
-            display: flex;
-            flex-direction: column;
-            /* justify-content: space-between; */
-            color: white;
-            text-decoration: none;
-        }
-
-        .footer-left {
-            display: inline-block;
-            margin: 0em auto;
-            padding: 0em 1em;
-            /* border: 2px solid red; */
-        }
-
-        .footer-left a {
-            padding: 0em 1em;
-            text-decoration: none;
-        }
-
-        .footer-mid {
-            text-align: right;
-            margin: 2px auto;
-            text-decoration: none;
-            /* border: 2px solid red; */
-        }
-
-        .footer-right {
-            /* border: 2px solid red; */
-            text-align: right;
-            margin-right: 1em;
-        }
-
-        .footer-right a,
-        .footer-mid a {
-            text-decoration: none;
-            color: white;
-        }
     </style>
 </head>
 
@@ -287,7 +45,7 @@
         <div class="home">
             <div class="home_left">
                 <h1><br><br>
-                    Côte d'Azur WebCreator Pro | Your technical Partner
+                    Welcome to Côte d'Azur Web Design and Development
                 </h1><br>
                 <p>At Côte d'Azur WebCreator Pro, we're more than just a digital agency – we're your creative partner in
                     bringing your online vision to life. Nestled along the stunning shores of the French Riviera, our
@@ -302,30 +60,122 @@
 
         </div>
     </section>
-    
+
     <section id="services">
 
         <div class="details">
-            <h2>Our Clients have a <b>100%</b> Visibility rate online</h2><br>
+            <h1>Our Clients have a <b>100%</b> Visibility rate online</h1><br>
         </div>
         <div class="what-we-do">
-            <h2>What We Do?</h2>
-            <div class="sevices">
-                <h3>Website Development</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo vero, sunt fugiat est facilis
-                    repellendus delectus! Quaerat enim ex corporis voluptas dolorum deserunt nobis fugiat, eligendi Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    minima, iste quis doloribus!</p>
-                <h3>Services - 02</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo vero, sunt fugiat est facilis Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    repellendus delectus! Quaerat enim ex corporis voluptas dolorum deserunt nobis fugiat, eligendi Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    minima, iste quis doloribus!</p>
-                    <h3>Services - 03</h3>
-                    <p>Making something interesting</p>
-                    <h3>Services - 04</h3>
-                    <p>Comming soon</p>
-                    <h3>Services - 05</h3>
-                    <p>Please come back later</p><br>
+            <h1>What We Do?</h1>
+            <div class="services">
+                <div class="services-left">
+                    <h3>Custom Web App Development:</h3>
+                    <ul>
+                        <li>Custom web application development</li>
+                        <li>Front-end development using HTML, CSS, and JavaScript</li>
+                        <li>Back-end development using programming languages like Python, Ruby, Node.js, or PHP</li>
+                        <li>Full-stack web development</li>
+                    </ul>
+                    <h3>Mobile App Integration:</h3>
+                    <ul>
+                        <li>Integrating web apps with mobile platforms (iOS, Android)</li>
+                        <li>Creating responsive designs for mobile devices</li>
+                    </ul>
+                    <h3>UX/UI Design:</h3>
+                    <ul>
+                        <li>User experience (UX) research and analysis</li>
+                        <li>User interface (UI) design and prototyping</li>
+                        <li>User testing and feedback incorporation</li>
+                        <li>Mobile app design</li>
+                    </ul>
+                    <h3>E-commerce Solutions:</h3>
+                    <ul>
+                        <li>Building e-commerce websites and platforms</li>
+                        <li>Payment gateway integration</li>
+                        <li>Shopping cart development</li>
+                    </ul>
+                    <h3>Content Management Systems (CMS):</h3>
+                    <ul>
+                        <li>Custom CMS development</li>
+                        <li>Integration with popular CMS platforms like WordPress, Drupal, or Joomla</li>
+                        <li>Content management and updates</li>
+                    </ul>
+                    <h3>Database Development:</h3>
+                    <ul>
+                        <li>Database design and development</li>
+                        <li>Data modeling and optimization</li>
+                        <li>Database administration and maintenance</li>
+                    </ul>
+                    <h3>Web Security:</h3>
+                    <ul>
+                        <li>Security audits and vulnerability assessments</li>
+                        <li>Implementation of security best practices</li>
+                        <li>SSL certificate installation</li>
+                    </ul>
+                    <h3>Web Hosting and Maintenance:</h3>
+                    <ul>
+                        <li>Hosting solutions for web applications</li>
+                        <li>Regular maintenance and updates</li>
+                        <li>Performance optimization and scalability</li>
+                    </ul>
+                    <h3>SEO and Digital Marketing Integration:</h3>
+                    <ul>
+                        <li>Search engine optimization (SEO) to improve website visibility</li>
+                        <li>Integration with digital marketing tools and strategies</li>
+                    </ul>
+                    <h3>E-Learning and E-Learning Platforms:</h3>
+                    <ul>
+                        <li>Building e-learning websites and platforms</li>
+                        <li>Learning management system (LMS) development</li>
+                    </ul>
+                </div>
+                <div class="service-right">
+                    <h3>API Development and Integration:</h3>
+                    <ul>
+                        <li>Designing and developing APIs for third-party integrations</li>
+                        <li>Integrating external services and data sources</li>
+                    </ul>
+                    <h3>Cloud Computing Solutions:</h3>
+                    <ul>
+                        <li>Deploying web apps on cloud platforms like AWS, Azure, or Google Cloud</li>
+                        <li>Scalability and load balancing</li>
+                    </ul>
+                    <h3>Analytics and Reporting:</h3>
+                    <ul>
+                        <li>Implementing analytics tools for tracking user behavior</li>
+                        <li>Generating custom reports and insights</li>
+                    </ul>
+                    <h3>Consultation and Strategy:</h3>
+                    <ul>
+                        <li>Technology consultation and strategy planning</li>
+                        <li>Project management and guidance</li>
+                    </ul>
+                    <h3>Support and Maintenance:</h3>
+                    <ul>
+                        <li>24/7 technical support</li>
+                        <li>Bug fixes and issue resolution</li>
+                        <li>Regular updates and feature enhancements</li>
+                    </ul>
+                    <h3>Quality Assurance and Testing:</h3>
+                    <ul>
+                        <li>Comprehensive testing, including functional, usability, and performance testing</li>
+                        <li>Debugging and quality assurance</li>
+                    </ul>
+                    <h3>UI/UX Audits and Redesign:</h3>
+                    <ul>
+                        <li>Evaluating existing user interfaces and experiences</li>
+                        <li>Recommending and implementing improvements</li>
+                    </ul>
+                    <h3>Social Media Integration:</h3>
+                    <ul>
+                        <li>Integrating social media features and sharing options</li>
+                        <li>Social media marketing and advertising campaigns</li>
+                    </ul>
+                </div>
             </div>
+            <h2>We provide tailored web development solutions based on our clients need</h2>
+        </div>
         </div>
     </section>
     <section id="testimonials">
@@ -344,18 +194,19 @@
                             Website</a></button>
             </div>
             <div class="client-02">
-                <img src="Skema_Business_School_Logo.png" alt="Skema Logo">
+                <img src="Skema_Business_School_Logo.png" alt="">
                 <h3>Skema Business School</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit natus, debitis impedit dolor optio
-                    ullam inventore quo temporibus esse rem culpa nam quasi nemo voluptates         Officiis.</p>
+                    ullam inventore quo temporibus esse rem culpa nam quasi nemo voluptates Officiis.</p>
                 <button class="client-btn"><a href="https://www.skema.edu/">Visit the Website</a></button>
             </div>
             <div class="client-03">
-                <img src="Amadeus_Logo.png" alt="Amadeus Logo">
+                <img src="Amadeus_Logo.png" alt="">
                 <h3>Amadeus IT Group</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos deleniti rem adipisci officiis
                     similique
-                    quisquam in, voluptatum reiciendis. Inventore, provident voluptas. Modi odit iste voluptates, vero</p>
+                    quisquam in, voluptatum reiciendis. Inventore, provident voluptas. Modi odit iste voluptates, vero
+                </p>
                 <button class="client-btn"><a href="democlass.html">Visit the Website</a></button>
             </div>
         </div>

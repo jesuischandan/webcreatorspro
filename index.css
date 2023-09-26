@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    /* border: 2px solid red; */
+
+}
+
+#nav_options {
+    display: flex;
+    flex-direction: row;
+}
+
+#nav_options a {
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+}
+
+#nav_options a:hover,
+#nav_options a.active {
+    text-decoration: underline;
+    color: gray;
+}
+
+#nav_options div {
+    padding: 2em 2em;
+}
+
+#logo img {
+    margin-left: 1.5em;
+    width: 111px;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    margin: auto 1%;
+}
+
+.search input {
+    background-color: white;
+    color: black;
+    height: 24px;
+    border-radius: 4px;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    /* border: 2px solid red; */
+    margin: 0% auto;
+}
+
+.home_left {
+    width: 60vw;
+    margin: 8em 2em;
+}
+
+.home_left h1 {
+    padding-left: 2em;
+}
+
+.home_left p {
+    margin-left: 4em;
+}
+
+.home_img img {
+    width: 80%;
+    padding: 2em 2em;
+}
+
+.home_btn {
+    margin-left: 12%;
+    margin-top: 1em;
+    background-color: red;
+    width: 85%;
+    border: 2px solid green;
+    border-radius: 10px;
+    height: 15%;
+}
+
+.home_btn a {
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+}
+
+.details {
+    text-align: center;
+    font-size: large;
+    color: blue;
+}
+.what-we-do{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+.what-we-do h1 {
+    margin-left: 10%;
+    font-size: x-large;
+}
+
+.services {
+    display: flex;
+    flex-direction: row;
+    width: 76%;
+    margin: 1% auto;
+    border: 2px solid green;
+}
+.services ul{
+    margin-left: 3%;
+}
+.services h3{
+    margin-top: 1%;
+}
+.services-left{
+    border: 2px solid red;
+    width: 50%;
+}
+.services-right{
+    width: 50%;
+    border: 2px solid red;
+}
+
+.clients_head {
+    text-align: center;
+}
+
+.clients {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin: 3% auto;
+}
+
+.course-link {
+    text-decoration: none;
+    color: black;
+}
+
+.client-01,.client-02,
+.client-03 {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+}
+
+.client-01 img, .client-02 img, .client-03 img {
+    width: 100%;
+}
+
+.client-btn {
+    width: 100%;
+}
+
+.client-btn a {
+    text-decoration: none;
+    font-size: larger;
+}
+#contact-us h2{
+    text-align: center;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    width: 80%;
+    margin: 1em auto;
+
+}
+
+.contact_map {
+    width: 90%;
+    margin: 0px auto;
+}
+
+.contact_map img {
+    width: 100%
+}
+
+.contact_form {
+    width: 40%;
+    /* border: 2px solid green; */
+}
+
+.contact_form h3 {
+    margin-bottom: 1em;
+}
+
+.contact_form form {
+    display: flex;
+    flex-direction: column;
+    /* max-width: 700px; */
+}
+
+.contact_form label {
+    font-size: larger;
+}
+
+.contact_form input {
+    font-size: medium;
+    margin: 0.1em 0em;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    color: white;
+    text-decoration: none;
+}
+
+.footer-left {
+    display: inline-block;
+    margin: 0em auto;
+    padding: 0em 1em;
+    /* border: 2px solid red; */
+}
+
+.footer-left a {
+    padding: 0em 1em;
+    text-decoration: none;
+}
+
+.footer-mid {
+    text-align: right;
+    margin: 2px auto;
+    text-decoration: none;
+    /* border: 2px solid red; */
+}
+
+.footer-right {
+    /* border: 2px solid red; */
+    text-align: right;
+    margin-right: 1em;
+}
+
+.footer-right a,
+.footer-mid a {
+    text-decoration: none;
+    color: white;
+}
