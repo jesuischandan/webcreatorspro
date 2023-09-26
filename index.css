@@ -68,6 +68,7 @@ body {
     width: 80%;
     /* border: 2px solid red; */
     margin: 0% auto;
+    /* background-color: aquamarine; */
 }
 
 .home_left {
@@ -80,7 +81,7 @@ body {
 }
 
 .home_left p {
-    margin-left: 4em;
+    margin-left: 3.5em;
 }
 
 .home_img img {
@@ -89,7 +90,7 @@ body {
 }
 
 .home_btn {
-    margin-left: 12%;
+    margin-left: 10%;
     margin-top: 1em;
     background-color: red;
     width: 85%;
@@ -108,11 +109,13 @@ body {
     text-align: center;
     font-size: large;
     color: blue;
+    margin: 0px 0px;
+    /* border: 2px solid red; */
 }
 .what-we-do{
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .what-we-do h1 {
@@ -123,23 +126,28 @@ body {
 .services {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 76%;
     margin: 1% auto;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 .services ul{
-    margin-left: 3%;
+    margin-left: 5%;
 }
 .services h3{
     margin-top: 1%;
 }
 .services-left{
-    border: 2px solid red;
-    width: 50%;
+    /* border: 2px solid red; */
+    width: 40%;
 }
 .services-right{
-    width: 50%;
-    border: 2px solid red;
+    width: 40%;
+    /* border: 2px solid red; */
+}
+.service-bottom{
+    text-align: center;
+    color: green;
 }
 
 .clients_head {
